@@ -4,14 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 
-import Pages.RegisterPatient_Pages;
-
+import Pages.RegisterPatient_Page;
 
 public class Index {
-	 protected static WebDriver driver;
+	static WebDriver driver;
 
 	@BeforeSuite
 	public WebDriver launch_Browser() {
@@ -33,17 +34,22 @@ public class Index {
 		driver.findElement(By.xpath("//*[@id=\"Inpatient Ward\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"loginButton\"]")).click();
 		
+        String actualResult=driver.getTitle();
+       // Assert.assertEquals(actualResult,"Home","Title is not Matching");       
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(actualResult, "Home", "Title is not Matching");
+
 		pageFactory();
 	}
 
-	
 	public static void pageFactory() {
-		PageFactory.initElements(driver, RegisterPatient_Pages.class); 
+		PageFactory.initElements(driver, RegisterPatient_Page.class);
+
 	}
 
 	@AfterSuite
 	public static void tear_down() throws InterruptedException {
-		//driver.quit();
+		// driver.quit();
 
 	}
 

@@ -8,7 +8,7 @@
           <include name="launch_Browser"/>
           <include name="login"/>
           <include name="tear_down"/>
-          <include name="contactInfo"/>
+          <include name="verify_patient_vist"/>
         </methods>
       </class> <!-- TestData.PatientData -->
     </classes>

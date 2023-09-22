@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-21T18:47:24 IST" name="Default suite" finished-at="2023-09-21T18:47:32 IST" duration-ms="7785">
+  <suite started-at="2023-09-22T12:26:39 IST" name="Default suite" finished-at="2023-09-22T12:27:02 IST" duration-ms="22921">
     <groups>
     </groups>
-    <test started-at="2023-09-21T18:47:24 IST" name="Default test" finished-at="2023-09-21T18:47:32 IST" duration-ms="7785">
+    <test started-at="2023-09-22T12:26:39 IST" name="Default test" finished-at="2023-09-22T12:27:02 IST" duration-ms="22921">
       <class name="TestData.PatientData">
-        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:TestData.PatientData@663c9e7a]" started-at="2023-09-21T18:47:07 IST" name="launch_Browser" finished-at="2023-09-21T18:47:22 IST" duration-ms="15214" status="PASS">
+        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:26:30 IST" name="launch_Browser" finished-at="2023-09-22T12:26:37 IST" duration-ms="6747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_Browser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:TestData.PatientData@663c9e7a]" started-at="2023-09-21T18:47:22 IST" name="login" finished-at="2023-09-21T18:47:24 IST" duration-ms="2102" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:26:37 IST" name="login" finished-at="2023-09-22T12:26:39 IST" duration-ms="2617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="click_Register_menu()[pri:1, instance:TestData.PatientData@663c9e7a]" started-at="2023-09-21T18:47:24 IST" name="click_Register_menu" finished-at="2023-09-21T18:47:29 IST" duration-ms="4805" status="PASS">
+        <test-method signature="click_Register_menu()[pri:1, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:26:39 IST" name="click_Register_menu" finished-at="2023-09-22T12:26:46 IST" duration-ms="6704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Register_menu -->
-        <test-method signature="demographics()[pri:2, instance:TestData.PatientData@663c9e7a]" started-at="2023-09-21T18:47:29 IST" name="demographics" finished-at="2023-09-21T18:47:32 IST" duration-ms="2744" status="PASS">
+        <test-method signature="demographics()[pri:2, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:26:46 IST" name="demographics" finished-at="2023-09-22T12:26:47 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demographics -->
-        <test-method signature="contactInfo()[pri:3, instance:TestData.PatientData@663c9e7a]" started-at="2023-09-21T18:47:32 IST" name="contactInfo" finished-at="2023-09-21T18:47:32 IST" duration-ms="156" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="contactInfo()[pri:3, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:26:47 IST" name="contactInfo" finished-at="2023-09-22T12:26:47 IST" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactInfo -->
+        <test-method signature="verify_patient_vist()[pri:4, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:26:47 IST" name="verify_patient_vist" finished-at="2023-09-22T12:27:02 IST" duration-ms="14911" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="attachments.attachments.visitActions.default"]"}
   (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [02203192243d0e4060d36f6f46382598, sendKeysToElement {id=743D3CC1A0B0FB4F9785FB88A4EBBFCC_element_67, value=[Ljava.lang.CharSequence;@54bca971}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\UPL2\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62568/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (02203192243d0e4060d36f6f46382598)] -> xpath: //*[@name="address1"]]
-Session ID: 02203192243d0e4060d36f6f46382598]]>
+Command: [bc7dadc477b3b0da92f3e76c1d5cc3f3, findElement {using=xpath, value=//*[@id="attachments.attachments.visitActions.default"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\UPL2\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53003}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53003/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7dadc477b3b0da92f3e76c1d5cc3f3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="attachments.attachments.visitActions.default"]"}
   (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [02203192243d0e4060d36f6f46382598, sendKeysToElement {id=743D3CC1A0B0FB4F9785FB88A4EBBFCC_element_67, value=[Ljava.lang.CharSequence;@54bca971}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\UPL2\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62568/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (02203192243d0e4060d36f6f46382598)] -> xpath: //*[@name="address1"]]
-Session ID: 02203192243d0e4060d36f6f46382598
+Command: [bc7dadc477b3b0da92f3e76c1d5cc3f3, findElement {using=xpath, value=//*[@id="attachments.attachments.visitActions.default"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\UPL2\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53003}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53003/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7dadc477b3b0da92f3e76c1d5cc3f3
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -56,13 +60,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-at TestData.PatientData.contactInfo(PatientData.java:36)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at TestData.PatientData.verify_patient_vist(PatientData.java:50)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -91,11 +96,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactInfo -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestData.PatientData@663c9e7a]" started-at="2023-09-21T18:47:32 IST" name="tear_down" finished-at="2023-09-21T18:47:32 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verify_patient_vist -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T12:27:03 IST" name="tear_down" finished-at="2023-09-22T12:27:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
