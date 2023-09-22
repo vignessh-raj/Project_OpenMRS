@@ -1,8 +1,14 @@
 package Main;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -28,16 +34,21 @@ public class Index {
 	}
 
 	@BeforeSuite
-	public void login() {
+	public void login() throws IOException {
 		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("Admin");
 		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Admin123");
 		driver.findElement(By.xpath("//*[@id=\"Inpatient Ward\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"loginButton\"]")).click();
-		
-        String actualResult=driver.getTitle();
-       // Assert.assertEquals(actualResult,"Home","Title is not Matching");       
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(actualResult, "Home", "Title is not Matching");
+
+		String actualResult = driver.getTitle();
+			
+		 //Assert.assertEquals(actualResult,"Home","Title is not Matching");
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(actualResult, "Home", "Title is not Matching");
+
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); // Saving the screenshot in desired location																							
+		String destinationPath = "Utility\\Screenshots\\screenshot.png";
+		FileHandler.copy(screenshotFile, new File(destinationPath)); // Path to the location to save screenshot
 
 		pageFactory();
 	}

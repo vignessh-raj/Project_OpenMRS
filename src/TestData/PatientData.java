@@ -44,7 +44,6 @@ public class PatientData extends RegisterPatient_Page {
 	public static void verify_patient_vist() throws InterruptedException {
 		Thread.sleep(5000);
 		click_start_visit.click();
-		Thread.sleep(3000);
 		start_confirm.click();
 		Thread.sleep(3000);
 		click_attachment.click();

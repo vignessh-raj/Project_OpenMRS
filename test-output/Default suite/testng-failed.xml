@@ -9,6 +9,8 @@
           <include name="login"/>
           <include name="tear_down"/>
           <include name="verify_patient_vist"/>
+          <include name="contactInfo"/>
+          <include name="demographics"/>
         </methods>
       </class> <!-- TestData.PatientData -->
     </classes>
