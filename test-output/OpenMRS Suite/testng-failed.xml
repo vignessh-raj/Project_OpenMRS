@@ -9,8 +9,18 @@
           <include name="tear_down"/>
           <include name="login"/>
           <include name="verify_patient_vist"/>
+          <include name="contactInfo"/>
+          <include name="demographics"/>
+          <include name="click_Register_menu"/>
         </methods>
       </class> <!-- TestData.PatientData -->
+      <class name="Main.Index">
+        <methods>
+          <include name="launch_Browser"/>
+          <include name="tear_down"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Main.Index -->
     </classes>
   </test> <!-- Patient Registration(failed) -->
 </suite> <!-- Failed suite [OpenMRS Suite] -->

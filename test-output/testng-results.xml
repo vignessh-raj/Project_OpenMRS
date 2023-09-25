@@ -2,40 +2,42 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-22T19:05:06 IST" name="Default suite" finished-at="2023-09-22T19:06:34 IST" duration-ms="88714">
+  <suite started-at="2023-09-25T12:58:34 IST" name="OpenMRS Suite" finished-at="2023-09-25T13:00:01 IST" duration-ms="87362">
     <groups>
     </groups>
-    <test started-at="2023-09-22T19:05:06 IST" name="Default test" finished-at="2023-09-22T19:06:34 IST" duration-ms="88714">
+    <test started-at="2023-09-25T12:58:34 IST" name="Patient Registration" finished-at="2023-09-25T13:00:01 IST" duration-ms="87362">
       <class name="TestData.PatientData">
-        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:04:54 IST" name="launch_Browser" finished-at="2023-09-22T19:05:03 IST" duration-ms="8838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch_Browser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:05:03 IST" name="login" finished-at="2023-09-22T19:05:06 IST" duration-ms="2634" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="click_Register_menu()[pri:1, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:05:06 IST" name="click_Register_menu" finished-at="2023-09-22T19:05:10 IST" duration-ms="4264" status="PASS">
+        <test-method signature="click_Register_menu()[pri:1, instance:TestData.PatientData@548d708a]" started-at="2023-09-25T12:58:34 IST" name="click_Register_menu" finished-at="2023-09-25T12:58:37 IST" duration-ms="3663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Register_menu -->
-        <test-method signature="demographics()[pri:2, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:05:10 IST" name="demographics" finished-at="2023-09-22T19:05:11 IST" duration-ms="666" status="PASS">
+        <test-method signature="demographics()[pri:2, instance:TestData.PatientData@548d708a]" started-at="2023-09-25T12:58:38 IST" name="demographics" finished-at="2023-09-25T12:58:38 IST" duration-ms="768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demographics -->
-        <test-method signature="contactInfo()[pri:3, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:05:11 IST" name="contactInfo" finished-at="2023-09-22T19:05:11 IST" duration-ms="544" status="PASS">
+        <test-method signature="contactInfo()[pri:3, instance:TestData.PatientData@548d708a]" started-at="2023-09-25T12:58:38 IST" name="contactInfo" finished-at="2023-09-25T12:58:39 IST" duration-ms="620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactInfo -->
-        <test-method signature="verify_patient_vist()[pri:4, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:05:11 IST" name="verify_patient_vist" finished-at="2023-09-22T19:06:34 IST" duration-ms="83181" status="PASS">
+        <test-method signature="verify_patient_vist()[pri:4, instance:TestData.PatientData@548d708a]" started-at="2023-09-25T12:58:39 IST" name="verify_patient_vist" finished-at="2023-09-25T13:00:01 IST" duration-ms="82262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_patient_vist -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:TestData.PatientData@1cf6d1be]" started-at="2023-09-22T19:06:36 IST" name="tear_down" finished-at="2023-09-22T19:06:36 IST" duration-ms="1" status="PASS">
+      </class> <!-- TestData.PatientData -->
+      <class name="Main.Index">
+        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:Main.Index@54422e18]" started-at="2023-09-25T12:58:15 IST" name="launch_Browser" finished-at="2023-09-25T12:58:30 IST" duration-ms="15273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_Browser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Main.Index@54422e18]" started-at="2023-09-25T12:58:30 IST" name="login" finished-at="2023-09-25T12:58:34 IST" duration-ms="3826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:Main.Index@54422e18]" started-at="2023-09-25T13:00:01 IST" name="tear_down" finished-at="2023-09-25T13:00:01 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
-      </class> <!-- TestData.PatientData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Main.Index -->
+    </test> <!-- Patient Registration -->
+  </suite> <!-- OpenMRS Suite -->
 </testng-results>

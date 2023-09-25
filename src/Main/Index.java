@@ -23,14 +23,15 @@ public class Index {
 	@BeforeSuite
 	public WebDriver launch_Browser() {
 
-		String driverLocation = "C:\\Users\\UPL2\\useee\\OpenMRS\\Utility\\chromedriver.exe";
+		String driverLocation = "C:\\Users\\UPL2\\git\\Project_OpenMRS\\bin\\Utility\\chromedriver.exe";
+
 		String url = "https://qa-refapp.openmrs.org/openmrs/login.htm";
 
 		System.setProperty("webdriver.chrome.driver", driverLocation);
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		return driver;
 	}
@@ -44,23 +45,24 @@ public class Index {
 
 		String verifyTitle = driver.getTitle();
 
-		 //Assert.assertEquals(verifyTitle,"Home","Title is not Matching");
+		// Assert.assertEquals(verifyTitle,"Home","Title is not Matching");
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(verifyTitle, "Home", "Title is not Matching");
 
-		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); // Saving the screenshot in desired location
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); // Saving the screenshot in
+																							// desired location
 		String destinationPath = "Utility\\Screenshots\\screenshot.png";
 		FileHandler.copy(screenshotFile, new File(destinationPath)); // Path to the location to save screenshot
 		pageFactory();
 	}
 
-
 	public static void pageFactory() {
 		PageFactory.initElements(driver, RegisterPatient_Page.class);
 	}
+
 	@AfterSuite
 	public static void tear_down() {
-		// driver.quit();
+		driver.quit();
 	}
 
 }

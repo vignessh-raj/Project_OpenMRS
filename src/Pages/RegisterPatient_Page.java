@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import Main.Index;
 
-public class RegisterPatient_Page extends Index {
+public class RegisterPatient_Page  {
 	
 	
 
@@ -20,7 +20,7 @@ public class RegisterPatient_Page extends Index {
 	public static WebElement family_name;
 
 	@FindBy(xpath = "//*[@id=\"next-button\"]")
-	public static WebElement name_next_btn;
+	public static WebElement next_btn;
 
 	@FindBy(xpath = "//*[@id=\"gender-field\"]")
 	public static WebElement select_gender;
